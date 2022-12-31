@@ -1,0 +1,53 @@
+* {
+  padding: 0px;
+  padding: 0px;
+}
+
+.bg-image {
+  background: url("../../images/background.png") right bottom no-repeat fixed;
+  background-size: cover;
+  width: 100vw;
+  color: white;
+}
+
+@mixin text-style($color, $font-family) {
+  color: $color;
+  font-family: $font-family;
+}
+
+.container {
+  @include text-style(white, system-ui);
+  background-color: $container-color;
+  width: 450px;
+  height: auto;
+  padding: 20px;
+}
+
+.logo {
+  width: 200px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  // Regulando distanciamento entre divs
+  text-align: center;
+  margin: 30px 0px;
+}
+
+.form-check-label {
+  margin-right: 20px;
+}
+
+.btn-send {
+  color: $btn-color;
+  border: 1px solid $btn-color;
+  margin-top: 8px;
+  &:hover {
+    background-color: $btn-color;
+    color: white;
+  }
+}
+
+.container-footer {
+  margin: auto;
+}
